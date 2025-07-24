@@ -17,11 +17,6 @@ document.getElementById('loginBtn').addEventListener('click', async () => {
      });
      const data = await response.json();
 
-
-    
-
-    const data = await response.json();
-
     if (response.ok) {
       document.getElementById('message').textContent = "Login successful ✅";
       // Save token or redirect
