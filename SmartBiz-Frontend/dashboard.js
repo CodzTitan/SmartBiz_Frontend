@@ -2,7 +2,7 @@ const API_URL = "https://smartbiz-webapi.onrender.com";
 
 document.getElementById('loadProducts').addEventListener('click', async () => {
   try {
-    const response = await fetch(`${API_URL}/products`);
+    const response = await fetch(`${API_URL}/products/`);
     const data = await response.json();
 
     const list = data.map(p => 
